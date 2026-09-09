@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matthias Vallet · CEO & co-fondateur de RUFIJI Capital</title>
+<meta name="description" content="Matthias Vallet, CEO et co-fondateur de RUFIJI Capital, société de gestion crypto agréée MiCA par l'AMF. Ingénieur Télécom SudParis, +9 ans sur le marché des cryptomonnaies.">
+<meta property="og:title" content="Matthias Vallet · CEO & co-fondateur de RUFIJI Capital">
+<meta property="og:description" content="Investir dans les crypto-actifs avec méthode, dans un cadre régulé. CEO et co-fondateur de RUFIJI Capital, société agréée MiCA par l'AMF.">
+<meta property="og:image" content="assets/scene-rufiji.jpg">
+<meta property="og:type" content="profile">
+<meta name="theme-color" content="#07070c">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦛</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#07070c; --bg2:#0e0e16; --card:#13131d; --card2:#181826; --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.14);
+    --text:#f4f4f8; --muted:#a5a5ba; --dim:#6d6d84;
+    --violet:#8b5cf6; --violet2:#a78bfa; --pink:#f0abfc; --blue:#7dd3fc;
+    --grad:linear-gradient(120deg,#7dd3fc 0%,#a78bfa 45%,#f0abfc 100%);
+    --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+    --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --r:20px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:.005em;line-height:1.08;margin:0}
+  h2{font-size:clamp(2.2rem,4.4vw,3.3rem)}
+  h3{font-size:1.5rem}
+  .eyebrow{display:flex;align-items:center;gap:12px;font-size:.76rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--violet2);margin-bottom:16px}
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--violet2)}
+  .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  section{padding:104px 0;position:relative}
+  .muted{color:var(--muted)}
+  .lead{max-width:640px;font-size:1.08rem;color:var(--muted);margin:16px 0 0}
+
+  /* glows */
+  .glow{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+  .glow::before{content:"";position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.3),transparent 60%);top:-380px;right:-260px;filter:blur(40px)}
+  .glow::after{content:"";position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(125,211,252,.16),transparent 60%);bottom:-300px;left:-260px;filter:blur(40px)}
+  .grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 0%,#000 20%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000 20%,transparent 70%);opacity:.5;pointer-events:none}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(7,7,12,.7);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{font-family:var(--serif);font-size:1.4rem;font-weight:700;display:flex;align-items:center;gap:10px}
+  .brand span{font-size:1.2rem}
+  .links{display:flex;gap:30px;font-size:.92rem;font-weight:500;color:var(--muted)}
+  .links a{position:relative;padding:4px 0}
+  .links a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--grad);transition:right .25s}
+  .links a:hover{color:var(--text)}.links a:hover::after{right:0}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:600;font-size:.95rem;transition:transform .15s,box-shadow .15s,background .15s,border-color .15s;border:1px solid transparent;cursor:pointer;font-family:var(--sans)}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:var(--grad);color:#0b0b10;box-shadow:0 8px 30px rgba(167,139,250,.28)}
+  .btn-primary:hover{box-shadow:0 12px 40px rgba(167,139,250,.45)}
+  .btn-ghost{border-color:var(--line2);color:var(--text);background:rgba(255,255,255,.03)}
+  .btn-ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.28)}
+  .btn-sm{padding:9px 16px;font-size:.86rem}
+  nav .btn{display:none}
+  @media(min-width:760px){nav .btn{display:inline-flex}}
+  .burger{display:none;width:42px;height:42px;border-radius:12px;border:1px solid var(--line2);background:rgba(255,255,255,.04);cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+  .burger span{display:block;width:18px;height:2px;background:var(--text);border-radius:2px;transition:transform .2s,opacity .2s}
+  .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .mobile-menu{display:none;flex-direction:column;border-top:1px solid var(--line);background:rgba(7,7,12,.96);padding:8px 24px 16px}
+  .mobile-menu a{padding:14px 0;border-bottom:1px solid var(--line);font-weight:500;font-size:1.05rem}
+  .mobile-menu a:last-child{border-bottom:0;color:var(--violet2)}
+  .mobile-menu.open{display:flex}
+  @media(max-width:759px){.links{display:none}.burger{display:flex}}
+
+  /* hero */
+  .hero{padding:0;overflow:hidden;position:relative}
+  .hero-photo{position:absolute;right:0;top:0;bottom:150px;width:60%;z-index:0}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:42% 12%}
+  .hero-photo .shade{position:absolute;inset:0;background:linear-gradient(90deg,#07070c 0%,rgba(7,7,12,.92) 18%,rgba(7,7,12,.45) 42%,rgba(7,7,12,0) 70%),linear-gradient(0deg,#07070c 0%,rgba(7,7,12,.75) 18%,transparent 45%)}
+  .hero .wrap{position:relative;z-index:1}
+  .hero-text{max-width:600px;padding:110px 0 40px;min-height:640px;display:flex;flex-direction:column;justify-content:center}
+  .hero .pill{display:inline-flex;align-self:flex-start;align-items:center;gap:8px;margin-top:34px;background:rgba(19,19,29,.9);border:1px solid var(--line2);border-radius:999px;padding:9px 18px;font-size:.82rem;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+  .hero h1{font-size:clamp(3.2rem,7.2vw,5.6rem);font-weight:700}
+  .hero .role{font-size:1.18rem;color:var(--muted);margin:20px 0 6px;font-weight:500}
+  .hero .role strong{color:var(--text);font-weight:600}
+  .tagline{font-family:var(--serif);font-size:clamp(1.55rem,2.6vw,2.05rem);font-style:italic;margin:12px 0 32px;color:#dcdce8}
+  .cta{display:flex;gap:14px;flex-wrap:wrap}
+  .dot{width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 4px rgba(74,222,128,.18)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px;position:relative;z-index:1}
+  .stat{background:rgba(19,19,29,.75);border:1px solid var(--line);border-radius:18px;padding:24px 22px;transition:border-color .2s,transform .2s}
+  .stat:hover{border-color:rgba(167,139,250,.45);transform:translateY(-2px)}
+  .stat b{display:block;font-family:var(--serif);font-size:2.3rem;font-weight:600;line-height:1}
+  .stat span{display:block;font-size:.86rem;color:var(--muted);margin-top:8px}
+  /* marquee */
+  .marquee{margin-top:64px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;overflow:hidden;position:relative;z-index:1;background:rgba(14,14,22,.6)}
+  .marquee .track{display:flex;gap:56px;white-space:nowrap;animation:scroll 38s linear infinite;width:max-content}
+  .marquee span{font-family:var(--serif);font-size:1.25rem;font-weight:600;color:var(--dim);letter-spacing:.04em;display:flex;align-items:center;gap:56px}
+  .marquee span::after{content:"◆";font-size:.55rem;color:var(--violet)}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  @media(max-width:900px){.hero-photo{width:100%;opacity:1;bottom:auto;height:min(78vh,560px)}.hero-photo img{object-position:center top}.hero-photo .shade{background:linear-gradient(0deg,#07070c 0%,#07070c 22%,rgba(7,7,12,.7) 45%,rgba(7,7,12,.15) 70%,rgba(7,7,12,0) 100%)}.hero-text{padding:min(52vh,380px) 0 20px;min-height:0;max-width:none}.hero .eyebrow{font-size:.68rem;letter-spacing:.14em}.stats{grid-template-columns:repeat(2,1fr);gap:12px;margin-top:40px}.stat{padding:18px 16px}.stat b{font-size:1.75rem;white-space:nowrap}.stat span{font-size:.8rem}.hero h1{font-size:clamp(2.9rem,13vw,4rem)}}
+
+  /* about */
+  .about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+  .about p{font-size:1.08rem;color:#cfcfdd;margin:0 0 18px}
+  .about p:first-of-type{font-size:1.22rem;color:var(--text);line-height:1.5}
+  .quote{border-left:2px solid var(--violet);padding-left:20px;font-family:var(--serif);font-size:1.5rem;font-style:italic;color:#e8e8f2;margin:30px 0 0}
+  .about .quote{margin-top:30px}
+  .about-photo{position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:0 40px 90px rgba(0,0,0,.6)}
+  .about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;transition:transform .6s}
+  .about-photo:hover img{transform:scale(1.03)}
+  .about-photo .cap{position:absolute;left:0;right:0;bottom:0;padding:90px 24px 24px;background:linear-gradient(transparent,rgba(7,7,12,.55) 40%,rgba(7,7,12,.95))}
+  .about-photo .cap q{quotes:none;display:block;font-family:var(--serif);font-style:italic;font-size:1.45rem;line-height:1.3;color:#f4f4f8}
+  .about-photo .cap small{display:block;margin-top:10px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--violet2);font-weight:600}
+  .about-photo .kpi{position:absolute;top:20px;left:20px;background:rgba(19,19,29,.92);border:1px solid var(--line2);border-radius:14px;padding:12px 16px;font-size:.82rem;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+  .about-photo .kpi b{display:block;font-family:var(--serif);font-size:1.7rem;line-height:1}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .chips span{font-size:.8rem;padding:6px 12px;border-radius:999px;border:1px solid rgba(167,139,250,.35);background:rgba(139,92,246,.1);color:#d6cdfa;font-weight:500}
+  @media(max-width:900px){.about .wrap{grid-template-columns:1fr;gap:28px}.about-photo{max-width:420px;margin:0 auto}.about-photo img{aspect-ratio:4/4}}
+
+  /* rufiji */
+  .alt{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .rufiji .grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
+  .badge{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;background:rgba(139,92,246,.12);border:1px solid rgba(167,139,250,.35);font-size:.9rem;font-weight:600;margin:8px 10px 8px 0}
+  .badge svg{width:18px;height:18px;flex:none}
+  .photos{position:relative;order:2}
+  @media(max-width:900px){.photos{order:0}}
+  .photo{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.55);position:relative}
+  .photo img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .6s}
+  .photo:hover img{transform:scale(1.03)}
+  .photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 20px;background:linear-gradient(transparent,rgba(7,7,12,.92));font-size:.85rem;color:var(--muted)}
+  .photo-2{position:absolute;right:-24px;bottom:-34px;width:46%;border-radius:16px;overflow:hidden;border:1px solid var(--line2);box-shadow:0 20px 60px rgba(0,0,0,.6);transform:rotate(3deg)}
+  .photo-2 img{aspect-ratio:4/3;object-fit:cover;width:100%}
+  .rufiji p{color:#cfcfdd;font-size:1.06rem}
+  @media(max-width:900px){.rufiji .grid{grid-template-columns:1fr}.photo-2{right:0;bottom:-24px;width:42%}}
+
+  /* media */
+  .media-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;margin-top:44px;position:relative;z-index:1}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-4px);border-color:rgba(167,139,250,.45);box-shadow:0 20px 50px rgba(0,0,0,.45)}
+  .card .body{padding:20px 22px 24px}
+  .card .kicker{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--violet2);font-weight:600;margin-bottom:8px}
+  .card h3{margin-bottom:8px}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
+  .card .cover{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 35%;transition:transform .6s}
+  .card:hover .cover{transform:scale(1.04)}
+  .card .imgwrap{overflow:hidden}
+  .tv{}
+  .tv-duo{display:grid;grid-template-columns:1fr;gap:3px;background:#000}
+  .tv-duo img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center;display:block}
+  .milestones{display:grid;grid-template-rows:1fr 1fr;gap:24px}
+  .ms{flex-direction:row;gap:20px;padding:26px 26px 26px 24px;align-items:flex-start}
+  .ms .ms-ico{width:56px;height:56px;flex:none;border-radius:16px;background:rgba(139,92,246,.12);border:1px solid rgba(167,139,250,.3);display:grid;place-items:center}
+  .ms .ms-ico svg{width:30px;height:30px}
+  .ms h3{font-size:1.4rem;margin-bottom:6px}
+  .ms p{margin:0 0 10px}
+  .ms-ref{font-size:.8rem;color:var(--violet2);font-weight:600}
+  .playlist{margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;position:relative;z-index:1}
+  .pl-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line)}
+  .pl-head .kicker{margin:0}
+  .pl-item{display:flex;align-items:center;gap:18px;padding:14px 22px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .15s}
+  .pl-item:hover{background:rgba(255,255,255,.04)}
+  .pl-item:last-of-type{border-bottom:0}
+  .pl-item img{width:120px;aspect-ratio:16/9;object-fit:cover;border-radius:10px;flex:none;filter:saturate(.85)}
+  .pl-txt{flex:1;min-width:0}
+  .pl-txt b{display:block;font-family:var(--serif);font-size:1.2rem;font-weight:600;line-height:1.2}
+  .pl-txt span{display:block;font-size:.85rem;color:var(--muted);margin-top:3px}
+  .pl-play{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid var(--line2);display:grid;place-items:center;font-size:.75rem;flex:none;transition:background .15s}
+  .pl-item:hover .pl-play{background:var(--grad);color:#0b0b10;border-color:transparent}
+  .pl-player{display:none;aspect-ratio:16/9;background:#000;border-top:1px solid var(--line)}
+  .pl-player iframe{width:100%;height:100%;border:0;display:block}
+  @media(max-width:900px){.milestones{grid-template-rows:auto}.pl-item{gap:12px;padding:12px 16px}.pl-item img{width:96px}.pl-txt b{font-size:1.05rem}.pl-txt span{font-size:.78rem}.pl-play{width:34px;height:34px}.pl-head .muted{display:none}}
+  .video{position:relative;aspect-ratio:16/9;background:#000;cursor:pointer;overflow:hidden}
+  .video img{width:100%;height:100%;object-fit:cover;opacity:.85;transition:opacity .2s,transform .5s}
+  .video:hover img{opacity:1;transform:scale(1.04)}
+  .video .play{position:absolute;inset:0;display:grid;place-items:center}
+  .video .play span{width:70px;height:70px;border-radius:50%;background:rgba(255,255,255,.94);display:grid;place-items:center;box-shadow:0 10px 40px rgba(0,0,0,.5);transition:transform .15s}
+  .video:hover .play span{transform:scale(1.1)}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .video .dur{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.75);padding:3px 9px;border-radius:6px;font-size:.76rem;font-weight:600}
+  @media(max-width:900px){.media-grid{grid-template-columns:1fr}}
+
+  /* timeline */
+  .timeline{position:relative;margin-top:52px;z-index:1}
+  .timeline::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--violet),rgba(139,92,246,.05))}
+  .item{position:relative;padding:0 0 46px 48px}
+  .item::before{content:"";position:absolute;left:4px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--violet)}
+  .item:first-child::before{background:var(--violet);box-shadow:0 0 0 6px rgba(139,92,246,.2)}
+  .item .when{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:6px}
+  .item h3{font-size:1.6rem}
+  .item .where{color:var(--violet2);font-weight:600;font-size:1rem;margin:4px 0 10px}
+  .item p{margin:0;color:var(--muted);max-width:720px}
+  .edu-row{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:8px;position:relative;z-index:1}
+  .edu{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+  .edu b{display:block;font-weight:600;margin-bottom:4px}
+  .edu span{color:var(--muted);font-size:.9rem}
+  @media(max-width:900px){.edu-row{grid-template-columns:1fr}}
+
+  /* méthode */
+  .methode .head{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;position:relative;z-index:1}
+  .methode .head .lead{margin-top:16px}
+  .methode .pull{font-family:var(--serif);font-size:1.5rem;font-style:italic;color:#dcdce8;line-height:1.35;border-left:2px solid var(--violet);padding-left:20px}
+  .steps{margin-top:56px;position:relative;z-index:1;border-top:1px solid var(--line)}
+  .step{display:grid;grid-template-columns:120px 1fr;gap:32px;padding:44px 0;border-bottom:1px solid var(--line);align-items:start}
+  .step .num{font-family:var(--serif);font-size:4.2rem;font-weight:600;line-height:.9;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.9}
+  .step h3{font-size:1.75rem;margin-bottom:12px}
+  .step p{margin:0 0 12px;color:#cfcfdd;font-size:1.05rem;max-width:760px}
+  .step p:last-child{margin-bottom:0}
+  .step .pt{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .step .pt span{font-size:.8rem;padding:6px 12px;border-radius:999px;border:1px solid rgba(167,139,250,.35);background:rgba(139,92,246,.1);color:#d6cdfa;font-weight:500}
+  .disclaimer{font-size:.78rem;color:var(--dim);margin-top:22px;max-width:760px;position:relative;z-index:1}
+  @media(max-width:900px){.methode .head{grid-template-columns:1fr}.step{grid-template-columns:1fr;gap:12px;padding:34px 0}.step .num{font-size:3rem}}
+
+  /* contact */
+  .contact .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start;position:relative;z-index:1}
+  .contact p.lead{margin-bottom:28px}
+  .linkcards{display:flex;flex-direction:column;gap:12px}
+  .linkcard{display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--card);border:1px solid var(--line);border-radius:16px;font-weight:600;transition:transform .2s,border-color .2s}
+  .linkcard:hover{transform:translateX(4px);border-color:rgba(167,139,250,.5)}
+  .linkcard .ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;flex:none}
+  .linkcard .ico svg{width:22px;height:22px}
+  .linkcard small{display:block;font-weight:400;color:var(--dim);font-size:.82rem}
+  .linkcard .arrow{margin-left:auto;color:var(--dim)}
+  .form{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+  .form h3{margin-bottom:22px;font-size:1.7rem}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  label{display:block;font-size:.88rem;font-weight:600;margin-bottom:8px}
+  .field{margin-bottom:18px}
+  input,textarea{width:100%;background:var(--bg2);border:1px solid var(--line2);border-radius:12px;padding:13px 15px;color:var(--text);font-family:var(--sans);font-size:.95rem;outline:none;transition:border-color .15s,box-shadow .15s}
+  input::placeholder,textarea::placeholder{color:var(--dim)}
+  input:focus,textarea:focus{border-color:var(--violet2);box-shadow:0 0 0 3px rgba(167,139,250,.2)}
+  textarea{min-height:150px;resize:vertical}
+  .form .btn{width:100%;justify-content:center;padding:15px}
+  .form .note{font-size:.8rem;color:var(--dim);text-align:center;margin:14px 0 0}
+  .form .ok{display:none;text-align:center;padding:30px 10px}
+  .form .ok b{display:block;font-family:var(--serif);font-size:1.6rem;margin-bottom:8px}
+  .hp{position:absolute;left:-9999px}
+  @media(max-width:900px){.contact .grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}.form{padding:24px}}
+
+  footer{border-top:1px solid var(--line);padding:36px 0;font-size:.86rem;color:var(--dim)}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+  footer .fl{display:flex;gap:20px}
+  footer a:hover{color:var(--text)}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.marquee .track{animation:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Matthias Vallet <span>🦛</span></a>
+    <div class="links">
+      <a href="#rufiji">RUFIJI Capital</a>
+      <a href="#medias">Médias</a>
+      <a href="#methode">Ma méthode</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn btn-ghost btn-sm" href="https://www.linkedin.com/in/matthias-vallet/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#rufiji">RUFIJI Capital</a>
+    <a href="#medias">Médias</a>
+    <a href="#methode">Ma méthode</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.linkedin.com/in/matthias-vallet/" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-photo"><picture><source media="(max-width:900px)" srcset="assets/hero-costume-mobile.jpg"><img src="assets/hero-costume.jpg" alt="Matthias Vallet présentant RUFIJI Capital" width="1073" height="938"></picture><div class="shade"></div></div>
+  <div class="wrap">
+    <div class="hero-text">
+      <div class="eyebrow">CEO &amp; co-fondateur · RUFIJI Capital · Agréée MiCA</div>
+      <h1>Matthias<br><span class="grad-text">Vallet</span></h1>
+      <div class="role">Vous souhaitez profiter du potentiel des crypto-actifs sans y consacrer votre temps. <strong>Je gère, vous gardez l'esprit libre.</strong></div>
+      <p class="tagline">« Investissez sereinement dans les cryptos. Je m'occupe de tout le reste. »</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://www.rufiji.capital/" target="_blank" rel="noopener">Découvrir RUFIJI Capital →</a>
+        <a class="btn btn-ghost" href="#methode">Voir ma méthode</a>
+      </div>
+      <div class="pill"><i class="dot"></i> Société agréée MiCA par l'AMF</div>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b class="grad-text">+9</b><span>ans d'expérience des marchés crypto, sur plusieurs cycles</span></div>
+      <div class="stat reveal"><b class="grad-text">MiCA</b><span>société agréée par l'AMF, n° A2026-016</span></div>
+      <div class="stat reveal"><b class="grad-text">5 000+</b><span>personnes me suivent sur LinkedIn, YouTube et X</span></div>
+      <div class="stat reveal"><b class="grad-text">France 2</b><span>et BFMTV, invité pour décrypter la crypto</span></div>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>France 2</span><span>BFMTV</span><span>franceinfo</span><span>Blockchain Addict</span><span>GM Web3</span><span>Dogfinance</span><span>Cube³</span><span>Télécom SudParis</span><span>Wavestone</span><span>KryptoSphere</span><span>Cryptoast</span>
+      <span>France 2</span><span>BFMTV</span><span>franceinfo</span><span>Blockchain Addict</span><span>GM Web3</span><span>Dogfinance</span><span>Cube³</span><span>Télécom SudParis</span><span>Wavestone</span><span>KryptoSphere</span><span>Cryptoast</span>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="wrap">
+    <div class="about-photo reveal">
+      <img loading="lazy" src="assets/ville-portrait.jpg" alt="Matthias Vallet au bureau, la ville en arrière-plan">
+      <div class="kpi"><b class="grad-text">+9 ans</b>sur les marchés crypto</div>
+      <div class="cap"><q>« Je préfère construire solide, brique par brique, plutôt que promettre vite et décevoir. »</q><small>Matthias Vallet</small></div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Pourquoi moi</div>
+      <h2>La crypto sans<br>le <span class="grad-text">stress</span>.</h2>
+      <p style="margin-top:22px">Les crypto-actifs sont une opportunité, mais aussi un marché exigeant, ouvert en permanence, où chaque erreur coûte cher. J'ai cofondé RUFIJI Capital à 26 ans pour combler cet écart : vous permettre d'y investir avec la sérénité d'un placement traditionnel, sans y consacrer votre temps.</p>
+      <p>Derrière cet engagement, neuf années de marchés et un parcours cohérent : ingénieur Télécom SudParis, consultant blockchain chez Wavestone auprès de groupes du CAC 40, analyste chez Cryptoast, président de KryptoSphere. Une seule ambition : rendre la crypto compréhensible, sérieuse et accessible.</p>
+      <p>Et parce que les engagements ne valent que s'ils sont vérifiables, RUFIJI Capital est agréée MiCA par l'AMF : une gouvernance, une conformité et une sécurité examinées et validées par le régulateur.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RUFIJI -->
+<section class="rufiji alt" id="rufiji">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div class="grid">
+      <div class="photos reveal">
+        <figure class="photo" style="margin:0">
+          <img loading="lazy" src="assets/scene-rufiji.jpg" alt="Matthias Vallet sur scène devant le logo RUFIJI Capital">
+          <figcaption>Sur scène, pour présenter RUFIJI Capital 🦛</figcaption>
+        </figure>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">Ce que je vous propose</div>
+        <h2>RUFIJI <span class="grad-text">Capital</span></h2>
+        <p style="margin-top:18px">Un portefeuille crypto géré pour vous, par une équipe française, dans l'un des cadres réglementaires les plus stricts d'Europe. Rien à surveiller, rien à arbitrer, rien à sécuriser vous-même. Vous suivez vos résultats, nous prenons les décisions.</p>
+        <p>Plus de 800 000 € levés auprès d'investisseurs qui ont cru au projet, et plus d'un an de travail sur la gouvernance, la conformité, la cybersécurité et la gestion des risques nous ont valu l'<strong>agrément MiCA</strong> de l'Autorité des marchés financiers. En France, les sociétés qui le détiennent restent très peu nombreuses. Pour vous, c'est une garantie concrète de sérieux et de transparence.</p>
+        <div style="margin:14px 0 30px">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg> Agréée MiCA · AMF n° A2026-016</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg> Première promotion de l'incubateur Cube³</span>
+        </div>
+        <a class="btn btn-primary" href="https://www.rufiji.capital/" target="_blank" rel="noopener">Découvrir nos mandats de gestion →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIAS -->
+<section id="medias">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Médias &amp; interventions</div>
+      <h2>Une voix de référence<br>sur la <span class="grad-text">crypto</span>.</h2>
+      <p class="lead">Journal de 20h, chaînes d'information, podcasts, conférences : les médias me sollicitent pour expliquer la crypto avec clarté et rigueur.</p>
+    </div>
+
+    <div class="media-grid">
+      <a class="card tv reveal" href="https://www.franceinfo.fr/societe/les-cryptomonnaies-ont-le-vent-en-poupe-chez-les-adolescents_6416185.html" target="_blank" rel="noopener">
+        <div class="tv-duo"><img loading="lazy" src="assets/tv-france2.jpg" alt="Matthias Vallet au journal de 20h de France 2"><img loading="lazy" src="assets/tv-bfmtv.jpg" alt="Matthias Vallet sur BFMTV"></div>
+        <div class="body">
+          <div class="kicker">Télévision · France 2 &amp; BFMTV</div>
+          <h3>Au JT de 20h de France 2 et sur BFMTV</h3>
+          <p>Invité du journal de France 2 pour décrypter l'univers des crypto-actifs, puis de la Première Édition de BFMTV sur la nouvelle génération d'investisseurs. Lire l'article franceinfo ↗</p>
+        </div>
+      </a>
+      <div class="milestones">
+        <a class="card ms reveal" href="https://www.linkedin.com/feed/update/urn:li:activity:7472207535920316416/" target="_blank" rel="noopener">
+          <div class="ms-ico"><svg viewBox="0 0 24 24" fill="none" stroke="url(#g1)" stroke-width="1.6"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f0abfc"/></linearGradient></defs><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div>
+            <div class="kicker">Étape clé · 2026</div>
+            <h3>Agrément MiCA obtenu</h3>
+            <p>RUFIJI Capital rejoint le cercle restreint des sociétés françaises agréées MiCA par l'AMF, au terme d'une année de travail réglementaire.</p>
+            <span class="ms-ref">AMF · n° A2026-016 · Lire l'annonce ↗</span>
+          </div>
+        </a>
+        <a class="card ms reveal" href="https://www.linkedin.com/feed/update/urn:li:activity:7117074114070097920/" target="_blank" rel="noopener">
+          <div class="ms-ico"><svg viewBox="0 0 24 24" fill="none" stroke="url(#g2)" stroke-width="1.6"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f0abfc"/></linearGradient></defs><path d="M12 2l9 5v10l-9 5-9-5V7l9-5z"/><path d="M12 12l9-5M12 12v10M12 12L3 7"/></svg></div>
+          <div>
+            <div class="kicker">Étape clé · 2023</div>
+            <h3>CEO à 26 ans, incubé chez Cube³</h3>
+            <p>Sélectionné parmi une centaine de candidatures pour la première promotion du plus grand incubateur Web3 d'Europe, à Angers.</p>
+            <span class="ms-ref">Lire l'annonce ↗</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="playlist reveal">
+      <div class="pl-head"><span class="kicker">Podcasts, conférences &amp; interviews</span><span class="muted" style="font-size:.85rem">Cliquez pour lancer la vidéo</span></div>
+      <div class="pl-item" data-id="1uUbdO6dYsM">
+        <img loading="lazy" src="assets/yt-1uUbdO6dYsM.jpg" alt=""><div class="pl-txt"><b>Dynamisez votre wallet crypto</b><span>Podcast · Blockchain Addict · 59 min</span></div><div class="pl-play">▶</div>
+      </div>
+      <div class="pl-item" data-id="J7uXjLJGK8Q">
+        <img loading="lazy" src="assets/yt-J7uXjLJGK8Q.jpg" alt=""><div class="pl-txt"><b>Les cryptomonnaies vont-elles remplacer les monnaies classiques ?</b><span>Conférence · Dogfinance · 1 h 01</span></div><div class="pl-play">▶</div>
+      </div>
+      <div class="pl-item" data-id="ui533gQTnzI" data-start="1988">
+        <img loading="lazy" src="assets/yt-ui533gQTnzI.jpg" alt=""><div class="pl-txt"><b>GM Web3 avec Matthias Vallet</b><span>Émission · GM Web3 · régulation, cycles de marché, entrepreneuriat</span></div><div class="pl-play">▶</div>
+      </div>
+      <div class="pl-item" data-id="Jm80O1rmqv0">
+        <img loading="lazy" src="assets/yt-Jm80O1rmqv0.jpg" alt=""><div class="pl-txt"><b>CEO de RUFIJI Capital, le portrait</b><span>Interview · HODL Consulting · 6 min</span></div><div class="pl-play">▶</div>
+      </div>
+      <div class="pl-player" id="plPlayer"></div>
+    </div>
+
+    <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;position:relative;z-index:1">
+      <a class="btn btn-ghost" href="https://www.youtube.com/@matthiasvallet" target="_blank" rel="noopener">▶ Toutes mes vidéos</a>
+      <a class="btn btn-ghost" href="https://x.com/mvallet_" target="_blank" rel="noopener">𝕏 Me suivre sur X</a>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTHODE -->
+<section class="methode alt" id="methode">
+  <div class="wrap">
+    <div class="head">
+      <div class="reveal">
+        <div class="eyebrow">Ma méthode</div>
+        <h2>Une méthode,<br>pas des <span class="grad-text">paris</span>.</h2>
+        <p class="lead">Sur ce marché, avoir raison une fois n'est pas difficile. Durer, en revanche, exige un cadre. Le mien repose sur trois piliers, appliqués à chacun de mes clients, sans exception.</p>
+      </div>
+      <p class="pull reveal">« Le marché ne récompense pas les plus rapides. Il récompense ceux qui savent où ils vont, et pourquoi. »</p>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="num">01</div>
+        <div>
+          <h3>Tout part de vous, pas du marché</h3>
+          <p>Avant de parler de Bitcoin ou de tendances, je parle de vous : votre horizon, votre tolérance au risque, la place que la crypto doit occuper dans votre patrimoine. Un mandat n'est pas un portefeuille type que l'on duplique, c'est une allocation construite pour vous, et avec laquelle vous êtes à l'aise sur la durée.</p>
+          <p>C'est aussi ce que la régulation exige, et c'est tant mieux : chez RUFIJI Capital, vous connaître est le premier acte de gestion.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="num">02</div>
+        <div>
+          <h3>Lire le marché, pas le bruit</h3>
+          <p>Ma grille de lecture croise trois couches que la plupart des investisseurs regardent séparément : les fondamentaux d'un actif, les données on-chain, c'est-à-dire ce que font réellement les portefeuilles, et le contexte macroéconomique, la liquidité mondiale avant tout, parce que c'est elle qui donne le tempo de la crypto.</p>
+          <p>Plus de cinquante indicateurs suivis en continu, pour que vous n'ayez jamais à le faire. L'analyse technique n'intervient qu'en dernier, pour affiner le moment d'entrer ou d'alléger.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="num">03</div>
+        <div>
+          <h3>Jouer les cycles avec discipline</h3>
+          <p>La crypto avance par grands cycles. Ma conviction est de long terme et elle dicte une règle simple : accumuler quand la peur domine, alléger quand l'euphorie s'installe. Jamais l'inverse, et jamais à découvert.</p>
+          <p>À l'intérieur d'un cycle, le capital tourne : Bitcoin ouvre généralement la marche, puis l'exposition se déplace progressivement vers des actifs plus dynamiques. Mon travail consiste à identifier ces rotations avant qu'elles ne deviennent évidentes. C'est là que se construit la performance sur un cycle complet.</p>
+        </div>
+      </div>
+    </div>
+    <p class="disclaimer">Cette page présente une philosophie d'investissement à titre informatif. Elle ne constitue ni un conseil personnalisé ni une promesse de performance. Investir dans les crypto-actifs comporte un risque de perte en capital ; les performances passées ne préjugent pas des performances futures.</p>
+  </div>
+</section>
+
+<!-- PARCOURS -->
+<section id="parcours">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Parcours</div>
+      <h2>Un parcours au service<br>d'une seule <span class="grad-text">mission</span>.</h2>
+    </div>
+    <div class="timeline">
+      <div class="item reveal">
+        <div class="when">Depuis novembre 2022</div>
+        <h3>Co-fondateur &amp; CEO</h3>
+        <div class="where">RUFIJI Capital · Paris</div>
+        <p>Je dirige la stratégie, le produit et les relations investisseurs d'une société de gestion crypto agréée MiCA. Une équipe à piloter, une gouvernance et une conformité à structurer, des clients et des partenaires à accompagner sur la durée.</p>
+      </div>
+      <div class="item reveal">
+        <div class="when">Sept. 2022 à juil. 2023</div>
+        <h3>Consultant Blockchain &amp; CTO Advisory</h3>
+        <div class="where">Wavestone · Paris</div>
+        <p>J'ai accompagné des sociétés cotées et des groupes du CAC 40 dans leur transition vers la blockchain : recommandations stratégiques, évaluation des opportunités et des risques, pilotage d'un blockchain lab, formations des équipes.</p>
+      </div>
+      <div class="item reveal">
+        <div class="when">Sept. 2020 à fév. 2023</div>
+        <h3>Président, puis rédacteur en chef</h3>
+        <div class="where">KryptoSphere® · France</div>
+        <p>À la tête de la première association étudiante d'Europe dédiée à la blockchain : 24 antennes, 800 étudiants, des partenariats avec Algorand, Celo et KPMG, 100 000 € de financements levés et des dizaines de conférences.</p>
+      </div>
+      <div class="item reveal">
+        <div class="when">Juin 2021 à sept. 2022</div>
+        <h3>Chef de projet &amp; analyste blockchain</h3>
+        <div class="where">Cryptoast · Paris</div>
+        <p>Co-fondateur de Cryptoast Research : analyse fondamentale et on-chain des marchés, accompagnement de particuliers et de professionnels, contenus pour rendre la crypto compréhensible par tous.</p>
+      </div>
+    </div>
+    <div class="eyebrow reveal" style="margin-top:8px">Formation</div>
+    <div class="edu-row">
+      <div class="edu reveal"><b>Télécom SudParis · Institut Polytechnique de Paris</b><span>Ingénieur réseaux &amp; télécoms · 2019 à 2022 · Meilleur mémoire de promotion, consacré à la blockchain</span></div>
+      <div class="edu reveal"><b>IUT Lille 1</b><span>DUT GEII, réseaux &amp; télécoms · 2017 à 2019</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <div class="eyebrow">Contact</div>
+        <h2>Échangeons sur<br>votre <span class="grad-text">projet</span>.</h2>
+        <p class="lead">Projet d'investissement, partenariat, sollicitation média ou simple question sur les marchés : écrivez-moi. Je lis et réponds personnellement à chaque message.</p>
+        <div class="linkcards">
+          <a class="linkcard" href="https://www.linkedin.com/in/matthias-vallet/" target="_blank" rel="noopener">
+            <span class="ico" style="background:#0a66c2"><svg viewBox="0 0 24 24" fill="#fff"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></span>
+            <span>Suivre sur LinkedIn<small>Le canal le plus direct pour me joindre</small></span><span class="arrow">↗</span>
+          </a>
+          <a class="linkcard" href="https://www.youtube.com/@matthiasvallet" target="_blank" rel="noopener">
+            <span class="ico" style="background:#ff0033"><svg viewBox="0 0 24 24" fill="#fff"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></span>
+            <span>Ma chaîne YouTube<small>Analyses, coulisses, pédagogie</small></span><span class="arrow">↗</span>
+          </a>
+          <a class="linkcard" href="https://x.com/mvallet_" target="_blank" rel="noopener">
+            <span class="ico" style="background:#000;border:1px solid var(--line2)"><svg viewBox="0 0 24 24" fill="#fff"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.4l-5.8-7.58-6.63 7.58H.48l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.41z"/></svg></span>
+            <span>@mvallet_ sur X<small>Le marché en temps réel</small></span><span class="arrow">↗</span>
+          </a>
+          <a class="linkcard" href="https://www.rufiji.capital/" target="_blank" rel="noopener">
+            <span class="ico" style="background:rgba(139,92,246,.18);font-size:1.4rem">🦛</span>
+            <span>rufiji.capital<small>Nos mandats de gestion crypto</small></span><span class="arrow">↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="form reveal">
+        <form id="contactForm" action="https://formspree.io/f/VOTRE_ID" method="POST">
+          <h3>Envoyer un message</h3>
+          <div class="row">
+            <div class="field"><label for="name">Prénom &amp; Nom</label><input id="name" name="name" placeholder="Jean Dupont" required></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="jean@exemple.com" required></div>
+          </div>
+          <div class="field"><label for="subject">Sujet</label><input id="subject" name="subject" placeholder="Collaboration, investissement, média…"></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Votre message…" required></textarea></div>
+          <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+          <button class="btn btn-primary" type="submit">Envoyer mon message →</button>
+          <p class="note">Réponse personnelle sous quelques jours. Vos données ne servent qu'à vous répondre.</p>
+        </form>
+        <div class="ok" id="formOk"><b>Message envoyé 🦛</b><span class="muted">Merci ! Je vous réponds dès que possible.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Matthias Vallet · CEO &amp; co-fondateur de <a href="https://www.rufiji.capital/" target="_blank" rel="noopener">RUFIJI Capital</a></span>
+    <div class="fl">
+      <a href="https://www.linkedin.com/in/matthias-vallet/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.youtube.com/@matthiasvallet" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://x.com/mvallet_" target="_blank" rel="noopener">X</a>
+      <a href="#top">Haut de page ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // Menu mobile
+  var burger = document.getElementById('burger'), menu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', function(){ var o = menu.classList.toggle('open'); burger.setAttribute('aria-expanded', o); });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }); });
+  // Vidéos : lecture dans le lecteur commun de la playlist
+  var player = document.getElementById('plPlayer');
+  document.querySelectorAll('.pl-item').forEach(function(v){
+    v.addEventListener('click', function(){
+      var id = v.dataset.id, start = v.dataset.start ? '&start=' + v.dataset.start : '';
+      player.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0' + start + '" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Vidéo YouTube"></iframe>';
+      player.style.display = 'block';
+      player.scrollIntoView({behavior:'smooth', block:'center'});
+    });
+  });
+  // Apparition au défilement
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  // Formulaire (Formspree) : envoi sans rechargement
+  var form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = form.querySelector('button'); btn.disabled = true; btn.textContent = 'Envoi…';
+    fetch(form.action, {method:'POST', body:new FormData(form), headers:{'Accept':'application/json'}})
+      .then(function(r){ if(!r.ok) throw new Error(); form.style.display='none'; document.getElementById('formOk').style.display='block'; })
+      .catch(function(){ btn.disabled=false; btn.textContent='Envoyer le message'; alert("Le message n'a pas pu partir. Écrivez-moi directement sur LinkedIn !"); });
+  });
+</script>
+</body>
+</html>
